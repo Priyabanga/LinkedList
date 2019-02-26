@@ -1,5 +1,7 @@
 package main;
 
+
+
 public class SinglyLinkedList {
     private class Node{
         private int data;
@@ -40,6 +42,9 @@ public class SinglyLinkedList {
     public static void main(String[] args) {
         SinglyLinkedList linkedList = new SinglyLinkedList();
         System.out.println(linkedList);
+        linkedList.insertHead(42);
+        System.out.println(linkedList);
+
     }
     @Override
     public String toString(){
@@ -56,6 +61,8 @@ public class SinglyLinkedList {
     }
     private void insertHead(int data)
     {
-
+        Node newNode = new Node(data,this.head);
+        this.head = newNode;
+        size++;
     }
 }
