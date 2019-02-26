@@ -45,7 +45,17 @@ public class SinglyLinkedList {
     public String toString(){
         StringBuilder response = new StringBuilder();
         response.append("[");
+        Node temp = this.head;                  //as during traversal head changes so we make a copy of it
+        while(temp!=null)
+        {
+            response.append(temp.getData());
+            temp=temp.next;
+        }
         response.append("]");
         return response.toString();
+    }
+    private void insertHead(int data)
+    {
+
     }
 }
