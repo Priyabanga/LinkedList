@@ -93,4 +93,28 @@ public class SinglyLinkedList {
             insertAfter(data,temp);
         }
     }
+    private int removeHead()
+    {
+        int response= -1;
+        Node temp = this.head;
+        if(temp!=null)
+        {
+            this.size--;
+            response=temp.data;
+            this.head=this.head.next;
+        }
+        return response;
+    }
+    public int removeAfter(Node node) {
+        int response = -1;
+        Node temp=node.next;
+        if (temp != null) {
+            temp= node.next;
+            response = temp.data;
+            node.next = temp.next;
+            size--;
+        }
+        return response;
+    }
+
 }
