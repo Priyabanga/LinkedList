@@ -41,13 +41,13 @@
 //        MyLinkedList linkedList = new MyLinkedList();
 //        Node node = new Node(10,null);
 //
-//        //linkedlist.insert(node)
+//        //linkedlist.insertHead(node)
 //        /*if head --> null  AND tail --> null
 //         * node-->next = null
 //         * head = node
 //         * tail = node*/
 //
-//        //linkedList.insert
+//        //linkedList.insertHead
 //        //linkedList.remove
 //    }
 //
